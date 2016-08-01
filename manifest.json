@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome devtools extension skeleton",
+  "description": "Minimal working example of a chrome devtools extension using injected scripts and content scripts",
+  "version": "0.0",
+  "devtools_page": "src/devtools.html",
+  "permissions": ["<all_urls>", "webNavigation"],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "scripts": [ "src/background.js" ],
+    "persistent": false
+  }
+}
